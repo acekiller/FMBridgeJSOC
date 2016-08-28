@@ -25,7 +25,8 @@
     self.webView.delegate = self;
     [self.webView registerJSCallSelector:@selector(hello:welcome:)
                               withTarget:self];
-    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://baidu.com"]]];
+    
+    [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]]];
 }
 
 - (void)didReceiveMemoryWarning {

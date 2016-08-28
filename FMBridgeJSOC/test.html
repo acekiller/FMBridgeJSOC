@@ -5,54 +5,23 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 
-<h1>H5 App 通讯 Demo</h1>
-
-<p style='color:red'>
-下面展示用 button 标签来调用js，
-<br>
-实际写代码的时候，
-<br>
-应该根据需求选择 js 调用方式
-</p>
-
-<!-- passDataToApp() 即是 app 中定义的方法 -->
-<label for="h52AppBtn">H5 -> App</label>
-<input id='h52AppBtn' type='button' value='Invoke' onclick="h5InvokeApp('abc', 'string from H5');"/>
+<input id='testButton' type='button' value='test' onclick="test('hello', '你好');"/>
 <br/>
 <br/>
 
 <div>
-  <h3>H5 调用 App 的返回值:</h3>
+  <h3>H5测试</h3>
   <br/>
-  <code id='retValueFromApp'/>
-</div>
-
-<div>
-  <h3>App 回传的数据:</h3>
-  <br/>
-  <code id='dataFromApp'/>
+  <code id='returnValue'/>
 </div>
 
 <script>
 
-'use strict';
-
-function h5InvokeApp(type,data){
-  var ret = window.hellowelcome(type, data);
-  document.getElementById("retValueFromApp").innerHTML += ret + '<br />';
+function test(value1,value2){
+  var ret = window.hellowelcome(value1, value2);
+  document.getElementById("returnValue").innerHTML += ret + '<br />';
 
   return ret;
-}
-
-// stub 方法，在正式和 app 对接的时候需要注释掉
-// H5单独调试时可用
-// function passDataToApp (type, jsonString) {
-//   console.log('type %j, data: %j', type, jsonString);
-// }
-
-// 回调: 接受 app 传来的数据
-function callbackFromApp(data) {
-  document.getElementById("dataFromApp").innerHTML += data + '<br />';
 }
 
 </script>
