@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		186B042B1D7290FA0006367A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B042A1D7290FA0006367A /* main.m */; };
+		186B042E1D7290FA0006367A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B042D1D7290FA0006367A /* AppDelegate.m */; };
+		186B04311D7290FA0006367A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B04301D7290FA0006367A /* ViewController.m */; };
+		186B04341D7290FA0006367A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B04321D7290FA0006367A /* Main.storyboard */; };
+		186B04361D7290FA0006367A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 186B04351D7290FA0006367A /* Assets.xcassets */; };
+		186B04391D7290FA0006367A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186B04371D7290FA0006367A /* LaunchScreen.storyboard */; };
+		186B04441D7290FA0006367A /* FMBridgeJSOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B04431D7290FA0006367A /* FMBridgeJSOCTests.m */; };
+		186B044F1D7290FA0006367A /* FMBridgeJSOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B044E1D7290FA0006367A /* FMBridgeJSOCUITests.m */; };
+		186B045F1D7291B40006367A /* UIWebView+JSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B045E1D7291B40006367A /* UIWebView+JSBridge.m */; };
+		186B04601D7291B40006367A /* UIWebView+JSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B045E1D7291B40006367A /* UIWebView+JSBridge.m */; };
+		186B04631D7291D20006367A /* FMJSForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B04621D7291D20006367A /* FMJSForward.m */; };
+		186B04641D7291D20006367A /* FMJSForward.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B04621D7291D20006367A /* FMJSForward.m */; };
+		186B04671D7296510006367A /* NSInvocation+JSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B04661D7296510006367A /* NSInvocation+JSBridge.m */; };
+		186B04681D7296510006367A /* NSInvocation+JSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B04661D7296510006367A /* NSInvocation+JSBridge.m */; };
+		186B046A1D72A9940006367A /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 186B04691D72A9940006367A /* test.html */; };
+		186B046B1D72A9940006367A /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 186B04691D72A9940006367A /* test.html */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		186B04401D7290FA0006367A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186B041E1D7290FA0006367A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 186B04251D7290FA0006367A;
+			remoteInfo = FMBridgeJSOC;
+		};
+		186B044B1D7290FA0006367A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 186B041E1D7290FA0006367A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 186B04251D7290FA0006367A;
+			remoteInfo = FMBridgeJSOC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		186B04261D7290FA0006367A /* FMBridgeJSOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMBridgeJSOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		186B042A1D7290FA0006367A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		186B042C1D7290FA0006367A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		186B042D1D7290FA0006367A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		186B042F1D7290FA0006367A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		186B04301D7290FA0006367A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		186B04331D7290FA0006367A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		186B04351D7290FA0006367A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		186B04381D7290FA0006367A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		186B043A1D7290FA0006367A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186B043F1D7290FA0006367A /* FMBridgeJSOCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMBridgeJSOCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		186B04431D7290FA0006367A /* FMBridgeJSOCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMBridgeJSOCTests.m; sourceTree = "<group>"; };
+		186B04451D7290FA0006367A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186B044A1D7290FA0006367A /* FMBridgeJSOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FMBridgeJSOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		186B044E1D7290FA0006367A /* FMBridgeJSOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMBridgeJSOCUITests.m; sourceTree = "<group>"; };
+		186B04501D7290FA0006367A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		186B045D1D7291B40006367A /* UIWebView+JSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JSBridge.h"; sourceTree = "<group>"; };
+		186B045E1D7291B40006367A /* UIWebView+JSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JSBridge.m"; sourceTree = "<group>"; };
+		186B04611D7291D20006367A /* FMJSForward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMJSForward.h; sourceTree = "<group>"; };
+		186B04621D7291D20006367A /* FMJSForward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMJSForward.m; sourceTree = "<group>"; };
+		186B04651D7296510006367A /* NSInvocation+JSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+JSBridge.h"; sourceTree = "<group>"; };
+		186B04661D7296510006367A /* NSInvocation+JSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+JSBridge.m"; sourceTree = "<group>"; };
+		186B04691D72A9940006367A /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		186B04231D7290FA0006367A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186B043C1D7290FA0006367A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186B04471D7290FA0006367A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186B041D1D7290FA0006367A = {
+			isa = PBXGroup;
+			children = (
+				186B04281D7290FA0006367A /* FMBridgeJSOC */,
+				186B04421D7290FA0006367A /* FMBridgeJSOCTests */,
+				186B044D1D7290FA0006367A /* FMBridgeJSOCUITests */,
+				186B04271D7290FA0006367A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		186B04271D7290FA0006367A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				186B04261D7290FA0006367A /* FMBridgeJSOC.app */,
+				186B043F1D7290FA0006367A /* FMBridgeJSOCTests.xctest */,
+				186B044A1D7290FA0006367A /* FMBridgeJSOCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		186B04281D7290FA0006367A /* FMBridgeJSOC */ = {
+			isa = PBXGroup;
+			children = (
+				186B045C1D7291960006367A /* JSBridge */,
+				186B042C1D7290FA0006367A /* AppDelegate.h */,
+				186B042D1D7290FA0006367A /* AppDelegate.m */,
+				186B042F1D7290FA0006367A /* ViewController.h */,
+				186B04301D7290FA0006367A /* ViewController.m */,
+				186B04691D72A9940006367A /* test.html */,
+				186B04321D7290FA0006367A /* Main.storyboard */,
+				186B04351D7290FA0006367A /* Assets.xcassets */,
+				186B04371D7290FA0006367A /* LaunchScreen.storyboard */,
+				186B043A1D7290FA0006367A /* Info.plist */,
+				186B04291D7290FA0006367A /* Supporting Files */,
+			);
+			path = FMBridgeJSOC;
+			sourceTree = "<group>";
+		};
+		186B04291D7290FA0006367A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				186B042A1D7290FA0006367A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		186B04421D7290FA0006367A /* FMBridgeJSOCTests */ = {
+			isa = PBXGroup;
+			children = (
+				186B04431D7290FA0006367A /* FMBridgeJSOCTests.m */,
+				186B04451D7290FA0006367A /* Info.plist */,
+			);
+			path = FMBridgeJSOCTests;
+			sourceTree = "<group>";
+		};
+		186B044D1D7290FA0006367A /* FMBridgeJSOCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				186B044E1D7290FA0006367A /* FMBridgeJSOCUITests.m */,
+				186B04501D7290FA0006367A /* Info.plist */,
+			);
+			path = FMBridgeJSOCUITests;
+			sourceTree = "<group>";
+		};
+		186B045C1D7291960006367A /* JSBridge */ = {
+			isa = PBXGroup;
+			children = (
+				186B045D1D7291B40006367A /* UIWebView+JSBridge.h */,
+				186B045E1D7291B40006367A /* UIWebView+JSBridge.m */,
+				186B04611D7291D20006367A /* FMJSForward.h */,
+				186B04621D7291D20006367A /* FMJSForward.m */,
+				186B04651D7296510006367A /* NSInvocation+JSBridge.h */,
+				186B04661D7296510006367A /* NSInvocation+JSBridge.m */,
+			);
+			path = JSBridge;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		186B04251D7290FA0006367A /* FMBridgeJSOC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186B04531D7290FA0006367A /* Build configuration list for PBXNativeTarget "FMBridgeJSOC" */;
+			buildPhases = (
+				186B04221D7290FA0006367A /* Sources */,
+				186B04231D7290FA0006367A /* Frameworks */,
+				186B04241D7290FA0006367A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FMBridgeJSOC;
+			productName = FMBridgeJSOC;
+			productReference = 186B04261D7290FA0006367A /* FMBridgeJSOC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		186B043E1D7290FA0006367A /* FMBridgeJSOCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186B04561D7290FA0006367A /* Build configuration list for PBXNativeTarget "FMBridgeJSOCTests" */;
+			buildPhases = (
+				186B043B1D7290FA0006367A /* Sources */,
+				186B043C1D7290FA0006367A /* Frameworks */,
+				186B043D1D7290FA0006367A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				186B04411D7290FA0006367A /* PBXTargetDependency */,
+			);
+			name = FMBridgeJSOCTests;
+			productName = FMBridgeJSOCTests;
+			productReference = 186B043F1D7290FA0006367A /* FMBridgeJSOCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		186B04491D7290FA0006367A /* FMBridgeJSOCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 186B04591D7290FA0006367A /* Build configuration list for PBXNativeTarget "FMBridgeJSOCUITests" */;
+			buildPhases = (
+				186B04461D7290FA0006367A /* Sources */,
+				186B04471D7290FA0006367A /* Frameworks */,
+				186B04481D7290FA0006367A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				186B044C1D7290FA0006367A /* PBXTargetDependency */,
+			);
+			name = FMBridgeJSOCUITests;
+			productName = FMBridgeJSOCUITests;
+			productReference = 186B044A1D7290FA0006367A /* FMBridgeJSOCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		186B041E1D7290FA0006367A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = fantasy;
+				TargetAttributes = {
+					186B04251D7290FA0006367A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					186B043E1D7290FA0006367A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 186B04251D7290FA0006367A;
+					};
+					186B04491D7290FA0006367A = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 186B04251D7290FA0006367A;
+					};
+				};
+			};
+			buildConfigurationList = 186B04211D7290FA0006367A /* Build configuration list for PBXProject "FMBridgeJSOC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 186B041D1D7290FA0006367A;
+			productRefGroup = 186B04271D7290FA0006367A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				186B04251D7290FA0006367A /* FMBridgeJSOC */,
+				186B043E1D7290FA0006367A /* FMBridgeJSOCTests */,
+				186B04491D7290FA0006367A /* FMBridgeJSOCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		186B04241D7290FA0006367A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186B046A1D72A9940006367A /* test.html in Resources */,
+				186B04391D7290FA0006367A /* LaunchScreen.storyboard in Resources */,
+				186B04361D7290FA0006367A /* Assets.xcassets in Resources */,
+				186B04341D7290FA0006367A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186B043D1D7290FA0006367A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186B046B1D72A9940006367A /* test.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186B04481D7290FA0006367A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		186B04221D7290FA0006367A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186B04671D7296510006367A /* NSInvocation+JSBridge.m in Sources */,
+				186B04311D7290FA0006367A /* ViewController.m in Sources */,
+				186B042E1D7290FA0006367A /* AppDelegate.m in Sources */,
+				186B042B1D7290FA0006367A /* main.m in Sources */,
+				186B045F1D7291B40006367A /* UIWebView+JSBridge.m in Sources */,
+				186B04631D7291D20006367A /* FMJSForward.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186B043B1D7290FA0006367A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186B04441D7290FA0006367A /* FMBridgeJSOCTests.m in Sources */,
+				186B04641D7291D20006367A /* FMJSForward.m in Sources */,
+				186B04681D7296510006367A /* NSInvocation+JSBridge.m in Sources */,
+				186B04601D7291B40006367A /* UIWebView+JSBridge.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		186B04461D7290FA0006367A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186B044F1D7290FA0006367A /* FMBridgeJSOCUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		186B04411D7290FA0006367A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 186B04251D7290FA0006367A /* FMBridgeJSOC */;
+			targetProxy = 186B04401D7290FA0006367A /* PBXContainerItemProxy */;
+		};
+		186B044C1D7290FA0006367A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 186B04251D7290FA0006367A /* FMBridgeJSOC */;
+			targetProxy = 186B044B1D7290FA0006367A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		186B04321D7290FA0006367A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186B04331D7290FA0006367A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		186B04371D7290FA0006367A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				186B04381D7290FA0006367A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		186B04511D7290FA0006367A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		186B04521D7290FA0006367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		186B04541D7290FA0006367A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FMBridgeJSOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FMBridgeJSOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		186B04551D7290FA0006367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FMBridgeJSOC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FMBridgeJSOC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		186B04571D7290FA0006367A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FMBridgeJSOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FMBridgeJSOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMBridgeJSOC.app/FMBridgeJSOC";
+			};
+			name = Debug;
+		};
+		186B04581D7290FA0006367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FMBridgeJSOCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FMBridgeJSOCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FMBridgeJSOC.app/FMBridgeJSOC";
+			};
+			name = Release;
+		};
+		186B045A1D7290FA0006367A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FMBridgeJSOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FMBridgeJSOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FMBridgeJSOC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		186B045B1D7290FA0006367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FMBridgeJSOCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FMBridgeJSOCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FMBridgeJSOC;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		186B04211D7290FA0006367A /* Build configuration list for PBXProject "FMBridgeJSOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186B04511D7290FA0006367A /* Debug */,
+				186B04521D7290FA0006367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		186B04531D7290FA0006367A /* Build configuration list for PBXNativeTarget "FMBridgeJSOC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186B04541D7290FA0006367A /* Debug */,
+				186B04551D7290FA0006367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		186B04561D7290FA0006367A /* Build configuration list for PBXNativeTarget "FMBridgeJSOCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186B04571D7290FA0006367A /* Debug */,
+				186B04581D7290FA0006367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		186B04591D7290FA0006367A /* Build configuration list for PBXNativeTarget "FMBridgeJSOCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				186B045A1D7290FA0006367A /* Debug */,
+				186B045B1D7290FA0006367A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 186B041E1D7290FA0006367A /* Project object */;
+}
