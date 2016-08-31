@@ -19,7 +19,7 @@
 
 function test(value1,value2){
   var ret = window.hellowelcome(value1, value2);
-  document.getElementById("returnValue").innerHTML += ret + '<br />';
+  document.getElementById("returnValue").innerHTML += ret(false) + '<br />';
 
   return ret;
 }

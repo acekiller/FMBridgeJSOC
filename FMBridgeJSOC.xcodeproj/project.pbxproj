@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185AFF1A1D76734C00C8BCDC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185AFF191D76734C00C8BCDC /* JavaScriptCore.framework */; };
 		186B042B1D7290FA0006367A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B042A1D7290FA0006367A /* main.m */; };
 		186B042E1D7290FA0006367A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B042D1D7290FA0006367A /* AppDelegate.m */; };
 		186B04311D7290FA0006367A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B04301D7290FA0006367A /* ViewController.m */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		185AFF191D76734C00C8BCDC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		186B04261D7290FA0006367A /* FMBridgeJSOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMBridgeJSOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186B042A1D7290FA0006367A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		186B042C1D7290FA0006367A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185AFF1A1D76734C00C8BCDC /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +99,7 @@
 		186B041D1D7290FA0006367A = {
 			isa = PBXGroup;
 			children = (
+				185AFF191D76734C00C8BCDC /* JavaScriptCore.framework */,
 				186B04281D7290FA0006367A /* FMBridgeJSOC */,
 				186B04421D7290FA0006367A /* FMBridgeJSOCTests */,
 				186B044D1D7290FA0006367A /* FMBridgeJSOCUITests */,
@@ -536,6 +540,7 @@
 				186B04551D7290FA0006367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		186B04561D7290FA0006367A /* Build configuration list for PBXNativeTarget "FMBridgeJSOCTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +549,7 @@
 				186B04581D7290FA0006367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		186B04591D7290FA0006367A /* Build configuration list for PBXNativeTarget "FMBridgeJSOCUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +558,7 @@
 				186B045B1D7290FA0006367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

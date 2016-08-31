@@ -34,8 +34,10 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (NSString *) hello:(NSString *)hello welcome:(NSString *)welcome {
-    return [NSString stringWithFormat:@"%@ : %@",hello,welcome];
+- (NSString *(^)(BOOL isLocal)) hello:(NSString *)hello welcome:(NSString *)welcome {
+    return ^NSString *(BOOL isLocal){
+        return [NSString stringWithFormat:@"%@",isLocal ? welcome : hello];
+    };
 }
 
 - (UIWebView *)webView {
@@ -50,7 +52,6 @@
 }
 
 - (void) webViewDidStartLoad:(UIWebView *)webView {
-    NSLog(@"evaluateScript : %@",[webView evaluateScript:@"hellowelcome('abcd','efgh')"]);
 }
 
 @end
