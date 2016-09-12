@@ -45,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		185AFF191D76734C00C8BCDC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		186B00CD1D8645DE00B20B56 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		186B04261D7290FA0006367A /* FMBridgeJSOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMBridgeJSOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186B042A1D7290FA0006367A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		186B042C1D7290FA0006367A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		186B041D1D7290FA0006367A = {
 			isa = PBXGroup;
 			children = (
+				186B00CD1D8645DE00B20B56 /* README.md */,
 				185AFF191D76734C00C8BCDC /* JavaScriptCore.framework */,
 				186B04281D7290FA0006367A /* FMBridgeJSOC */,
 				186B04421D7290FA0006367A /* FMBridgeJSOCTests */,
