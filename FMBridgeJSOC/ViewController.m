@@ -7,13 +7,15 @@
 //
 
 #import "ViewController.h"
-#import "UIWebView+JSBridge.h"
+#import "WKWebView+JSBridge.h"
 
 @interface ViewController ()
 <
-    UIWebViewDelegate
+    WKUIDelegate,
+    WKNavigationDelegate,
+    WKScriptMessageHandler
 >
-@property (nonatomic, strong, readonly) UIWebView *webView;
+@property (nonatomic, strong, readonly) WKWebView *webView;
 @end
 
 @implementation ViewController
@@ -22,9 +24,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.webView.delegate = self;
-    [self.webView registerJSCallSelector:@selector(hello:welcome:)
-                              withTarget:self];
+    self.webView.UIDelegate = self;
+    self.webView.navigationDelegate = self;
+//    [self.webView registerJSCallSelector:@selector(hello:welcome:)
+//                              withTarget:self];
     
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"test" ofType:@"html"]]]];
 }
@@ -40,18 +43,36 @@
     };
 }
 
-- (UIWebView *)webView {
+- (WKWebView *)webView {
     if (_webView == nil) {
-        _webView = [[UIWebView alloc] initWithFrame:self.view.bounds];
+//        WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+//        [config.userContentController addScriptMessageHandler:self name:@"webViewApp"];
+//        _webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:config];
+        _webView = [[WKWebView alloc] initWithFrame:self.view.bounds
+                                      jsCallMethods:^NSDictionary *{
+                                          return @{NSStringFromClass(self.class) : NSStringFromSelector(@selector(hello:welcome:))};
+                                      }];
         [self.view addSubview:_webView];
+        [self testWebView:_webView];
     }
     return _webView;
 }
 
-- (void) webViewDidFinishLoad:(UIWebView *)webView {
+- (void) testWebView:(WKWebView *)webview {
+    id webkit = [webview valueForKeyPath:@"window"];
+    NSLog(@"%@",webkit);
 }
 
-- (void) webViewDidStartLoad:(UIWebView *)webView {
+- (void) webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    NSLog(@"%s",__PRETTY_FUNCTION__);
 }
+
+- (void) webView:(WKWebView *)webView didFailNavigation:(WKNavigation *)navigation withError:(NSError *)error {
+    NSLog(@"%s -> %@",__PRETTY_FUNCTION__, error);
+}
+
+//- (void) userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
+//    NSLog(@"%@",message.body);
+//}
 
 @end

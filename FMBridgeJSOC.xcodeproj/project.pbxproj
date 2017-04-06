@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		185AFF1A1D76734C00C8BCDC /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 185AFF191D76734C00C8BCDC /* JavaScriptCore.framework */; };
+		1864E4191E15FE9A0014564C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1864E4181E15FE9A0014564C /* WebKit.framework */; };
+		1864E41C1E15FEC50014564C /* WKWebView+JSBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1864E41B1E15FEC50014564C /* WKWebView+JSBridge.m */; };
 		186B042B1D7290FA0006367A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B042A1D7290FA0006367A /* main.m */; };
 		186B042E1D7290FA0006367A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B042D1D7290FA0006367A /* AppDelegate.m */; };
 		186B04311D7290FA0006367A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186B04301D7290FA0006367A /* ViewController.m */; };
@@ -45,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		185AFF191D76734C00C8BCDC /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1864E4181E15FE9A0014564C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1864E41A1E15FEC50014564C /* WKWebView+JSBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WKWebView+JSBridge.h"; sourceTree = "<group>"; };
+		1864E41B1E15FEC50014564C /* WKWebView+JSBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WKWebView+JSBridge.m"; sourceTree = "<group>"; };
 		186B00CD1D8645DE00B20B56 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		186B04261D7290FA0006367A /* FMBridgeJSOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FMBridgeJSOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		186B042A1D7290FA0006367A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1864E4191E15FE9A0014564C /* WebKit.framework in Frameworks */,
 				185AFF1A1D76734C00C8BCDC /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1864E4171E15FE9A0014564C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1864E4181E15FE9A0014564C /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		186B041D1D7290FA0006367A = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +120,7 @@
 				186B04421D7290FA0006367A /* FMBridgeJSOCTests */,
 				186B044D1D7290FA0006367A /* FMBridgeJSOCUITests */,
 				186B04271D7290FA0006367A /* Products */,
+				1864E4171E15FE9A0014564C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,6 +187,8 @@
 				186B04621D7291D20006367A /* FMJSForward.m */,
 				186B04651D7296510006367A /* NSInvocation+JSBridge.h */,
 				186B04661D7296510006367A /* NSInvocation+JSBridge.m */,
+				1864E41A1E15FEC50014564C /* WKWebView+JSBridge.h */,
+				1864E41B1E15FEC50014564C /* WKWebView+JSBridge.m */,
 			);
 			path = JSBridge;
 			sourceTree = "<group>";
@@ -243,6 +260,7 @@
 				TargetAttributes = {
 					186B04251D7290FA0006367A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S7VSUA36LS;
 					};
 					186B043E1D7290FA0006367A = {
 						CreatedOnToolsVersion = 7.2;
@@ -308,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1864E41C1E15FEC50014564C /* WKWebView+JSBridge.m in Sources */,
 				186B04671D7296510006367A /* NSInvocation+JSBridge.m in Sources */,
 				186B04311D7290FA0006367A /* ViewController.m in Sources */,
 				186B042E1D7290FA0006367A /* AppDelegate.m in Sources */,
@@ -455,10 +474,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S7VSUA36LS;
 				INFOPLIST_FILE = FMBridgeJSOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FMBridgeJSOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainbo.FMBridgeJSOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -467,10 +487,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S7VSUA36LS;
 				INFOPLIST_FILE = FMBridgeJSOC/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.fantasy.FMBridgeJSOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mainbo.FMBridgeJSOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -18,10 +18,16 @@
 <script>
 
 function test(value1,value2){
-  var ret = window.hellowelcome(value1, value2);
-  document.getElementById("returnValue").innerHTML += ret(false) + '<br />';
-
-  return ret;
+    window.alert("test");
+    var message = {
+        'method' : 'hellowelcome',
+        'param1' : 'liuyanwei',
+    };
+    window.webkit.messageHandlers.webViewApp.postMessage(message);
+<!--  var ret = window.hellowelcome(value1, value2);-->
+<!--  document.getElementById("returnValue").innerHTML += ret(false) + '<br />';-->
+<!---->
+<!--  return ret;-->
 }
 
 </script>
